@@ -2,7 +2,7 @@
 Project 1: Aleena Madni
 
 ## Description
-![img](http://forum.curvefever.com/sites/default/files/ideas14Mar/SpaceInvader_0.png)
+![img](http://www.uidownload.com/files/35/175/735/game-invader-space-invaders-space-invaders-icon.png)
 
 Space Invaders is an arcade video game that was made in 1978 by Tomohiro Nishikado. Space Invaders was one of the first shooting games and it's purpose was to kill waves of aliens with a laser cannon to get the highest points possible. [Wikipedia](https://en.wikipedia.org/wiki/Space_Invaders)
 
