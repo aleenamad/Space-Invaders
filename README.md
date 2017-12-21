@@ -17,4 +17,4 @@ Space Invaders is an arcade video game that was made in 1978 by Tomohiro Nishika
 4) As a player, I would want an alert to know if I beat the round.
 
 ## Wireframe
-![img](wireframe)
+![img](wireframe.jpg)
