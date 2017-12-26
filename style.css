@@ -1,8 +1,15 @@
-.box {
-    width: 500px;
-    height: 500px;
-    padding: 50px;
-    border: 1px solid black;
-    box-sizing: border-box;
+#background {
+    width: 1200px;
+    height: 800px;
+    background-color: grey;
+    position: absolute;
+}
 
+#ship {
+  width: 50px;
+  height: 50px;
+  left: 575px;
+  top: 750px;
+  position: absolute;
+  background-color: blue;
 }

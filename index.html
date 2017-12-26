@@ -5,23 +5,30 @@
     <title>Simple Space Invader</title>
     <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="sketch.js"></script>
+
   </head>
   <body>
     <h1>The Super Simple Space Invader Game</h1>
 
 
     <!-- Box for the game -->
-    <div class="box">
+    <div id="background">
+      <div id="ship"></div>
+      <div id="missiles"></div>
+      <div id="invaders"></div>
+   </div>
 
-    </div>
-    <!-- the p5.js cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+
+
+    <!-- the p5.js, jquery, bootstrap cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
 
     <!-- all the JS Files -->
-      <script type="text/javascript" src="main.js"></script>
-      <script type="text/javascript" src="ship.js"></script>
+      <script type="text/javascript" src="sketch.js"></script>
   </body>
 </html>
