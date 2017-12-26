@@ -12,6 +12,10 @@
 ////////////////////////////////////////////
 //////////Testing Area////////////////////
 
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('keyup', handleKeyPress)
+})
+
 
 // ship variable give position
 var ship = {
@@ -62,14 +66,14 @@ function drawMissiles() {
 
 
 // get ship to move and fire missiles
-document.onKeyDown = function(e) {
-  if (e.keycode === 39) {
+function handleKeyPress (e) {
+  if (e.which == 39) {
     ship.left = ship.left + 10;
   }
-  if (e.keycode === 37) {
+  if (e.which == 37) {
     ship.left = ship.left - 10;
   }
-  if (e.keycode === 32) {
+  if (e.which == 32) {
     missiles.push( {
       left: hero.left + 20,
       top: hero.top - 20
