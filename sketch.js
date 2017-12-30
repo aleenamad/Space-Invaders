@@ -19,12 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ship variable give position
 var ship = {
+
+  //give it it's properties, position the element
   left: 575,
   top: 750
 }
 
 // the missile
-var missles= [];
+var missiles= [];
 
 
 // where the invaders will be
@@ -60,23 +62,53 @@ function drawShip() {
 
 
 function drawMissiles() {
-  document.getElementById('missiles')
+  document.getElementById('missiles').innerHTML = ""
+  for (var i = 0; i<missiles.length; i++) {
+    // added another div tag that specifies the missiles pistols
+    // document.getElementById('missles').innerHTML
+    document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[i].left}px; top:${missiles[i].top}px'></div>`;
+  }
 }
+
+function moveMissiles() {
+  for(var i = 0 ; i < missiles.length ; i++ ) {
+  missiles[i].top = missiles[i].top - 8
+  }
+}
+
+function drawInvaders() {
+    document.getElementById('invaders').innerHTML = ""
+    for(var i = 0 ; i < invaders.length ; i++ ) {
+    document.getElementById('invaders').innerHTML += `<div class='invader' style='left:${invaders[i].left}px; top:${invaders[i].top}px'></div>`;
+  }
+}
+  function moveInvaders() {
+      for(var i = 0 ; i < invaders.length; i++ ) {
+      invaders[i].top = invaders[i].top + 1;
+  }
+}
+
+
+
+
 
 
 
 // get ship to move and fire missiles
 function handleKeyPress (e) {
   if (e.which == 39) {
+    console.log("left");
     ship.left = ship.left + 10;
   }
   if (e.which == 37) {
+    console.log("right");
     ship.left = ship.left - 10;
   }
   if (e.which == 32) {
+    console.log("shoot");
     missiles.push( {
-      left: hero.left + 20,
-      top: hero.top - 20
+      left: ship.left + 20,
+      top: ship.top - 20
     });
     drawMissiles()
   }
