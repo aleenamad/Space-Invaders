@@ -97,11 +97,11 @@ function drawInvaders() {
 // get ship to move and fire missiles
 function handleKeyPress (e) {
   if (e.which == 39) {
-    console.log("left");
+    console.log("right");
     ship.left = ship.left + 10;
   }
   if (e.which == 37) {
-    console.log("right");
+    console.log("left");
     ship.left = ship.left - 10;
   }
   if (e.which == 32) {
