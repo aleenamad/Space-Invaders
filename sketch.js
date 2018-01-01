@@ -54,22 +54,26 @@ var invaders= [
 ];
 
 
-
+// allow it to move because redraw
 function drawShip() {
+  // add px to make sure its pixel
   document.getElementById('ship').style.left = ship.left + 'px';
   document.getElementById('ship').style.top = ship.top + 'px';
 }
 
-
+// so we can see the missiles but they wont move
 function drawMissiles() {
+  // clear out
   document.getElementById('missiles').innerHTML = ""
   for (var i = 0; i<missiles.length; i++) {
+
     // added another div tag that specifies the missiles pistols
     // document.getElementById('missles').innerHTML
+    // youre appeneding it to the array, have to use the back tick, in the missiles[i] is just putting the number and showing us the left and right property
     document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[i].left}px; top:${missiles[i].top}px'></div>`;
   }
 }
-
+// so this is gonna be put in the game loop in order to make it to move 
 function moveMissiles() {
   for(var i = 0 ; i < missiles.length ; i++ ) {
   missiles[i].top = missiles[i].top - 8
@@ -90,9 +94,16 @@ function drawInvaders() {
 
 
 
+// we have to create a game loop so the missiles actually move
+function gameLoop () {
+// use the javascript set timeout function
+setTimeout(gameLoop, 1000)
 
 
 
+}
+
+gameLoop();
 
 // get ship to move and fire missiles
 function handleKeyPress (e) {
@@ -104,12 +115,15 @@ function handleKeyPress (e) {
     console.log("left");
     ship.left = ship.left - 10;
   }
+
+  // add missile into array
   if (e.which == 32) {
     console.log("shoot");
     missiles.push( {
       left: ship.left + 20,
       top: ship.top - 20
     });
+    console.log(missiles);
     drawMissiles()
   }
   drawShip();
