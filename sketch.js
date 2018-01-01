@@ -73,7 +73,7 @@ function drawMissiles() {
     document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[i].left}px; top:${missiles[i].top}px'></div>`;
   }
 }
-// so this is gonna be put in the game loop in order to make it to move 
+// so this is gonna be put in the game loop in order to make it to move
 function moveMissiles() {
   for(var i = 0 ; i < missiles.length ; i++ ) {
   missiles[i].top = missiles[i].top - 8
@@ -81,7 +81,7 @@ function moveMissiles() {
 }
 
 function drawInvaders() {
-    document.getElementById('invaders').innerHTML = ""
+    document.getElementById('invaders').innerHTML = "";
     for(var i = 0 ; i < invaders.length ; i++ ) {
     document.getElementById('invaders').innerHTML += `<div class='invader' style='left:${invaders[i].left}px; top:${invaders[i].top}px'></div>`;
   }
@@ -97,10 +97,10 @@ function drawInvaders() {
 // we have to create a game loop so the missiles actually move
 function gameLoop () {
 // use the javascript set timeout function
-setTimeout(gameLoop, 1000)
-
-
-
+  setTimeout(gameLoop , 125)
+// so you want to move the missile then re draw it in the new spot
+  drawMissiles();
+  moveMissiles()
 }
 
 gameLoop();
