@@ -29,7 +29,7 @@ var ship = {
 var missiles= [];
 
 
-// where the invaders will be
+// where the invaders will be and create where they will be
 
 
 var invaders= [
@@ -49,7 +49,7 @@ var invaders= [
   { left:600, top: 175 }, // 5
   { left:700, top: 175 }, // 6
   { left:800, top: 175 }, // 7
-  { left:900, top: 175 }, // 8
+  { left:900, top: 175 } // 8
 
 ];
 
@@ -80,12 +80,18 @@ function moveMissiles() {
   }
 }
 
+
+
+//
 function drawInvaders() {
     document.getElementById('invaders').innerHTML = "";
     for(var i = 0 ; i < invaders.length ; i++ ) {
     document.getElementById('invaders').innerHTML += `<div class='invader' style='left:${invaders[i].left}px; top:${invaders[i].top}px'></div>`;
   }
 }
+
+
+// allow the invaders to move down
   function moveInvaders() {
       for(var i = 0 ; i < invaders.length; i++ ) {
       invaders[i].top = invaders[i].top + 1;
@@ -100,7 +106,9 @@ function gameLoop () {
   setTimeout(gameLoop , 125)
 // so you want to move the missile then re draw it in the new spot
   drawMissiles();
-  moveMissiles()
+  moveMissiles();
+  drawInvaders();
+  moveInvaders()
 }
 
 gameLoop();

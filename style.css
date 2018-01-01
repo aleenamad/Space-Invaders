@@ -14,13 +14,10 @@
   background-color: blue;
 }
 
-.invaders {
-  width: 50px;
-  height: 50px;
-  background-color: green;
+#invaders {
+  height: 800px;
+  width: 1200px;
   position: absolute;
-  top: 75px;
-  left: 550px;
 }
 
 .missile1 {
