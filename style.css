@@ -1,34 +1,36 @@
 #background {
-    width: 1200px;
+    width: 1000px;
     height: 800px;
-    background-color: grey;
+    background-image: url("pics/nasa-63032.jpg");
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #ship {
   width: 50px;
   height: 50px;
   left: 575px;
-  top: 750px;
+  top: 950px;
   position: absolute;
   background-color: blue;
 }
 
 #invaders {
   height: 800px;
-  width: 1200px;
+  width: 1000px;
   position: absolute;
 }
 
 .missile1 {
-  background-color: green;
+  background-color: red;
   width: 15px;
 	height: 15px;
   position: absolute;
 }
 
 #missiles {
-  width: 1200px;
+  width: 1000px;
   height: 800px;
   position: absolute;
 }

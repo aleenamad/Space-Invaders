@@ -33,23 +33,23 @@ var missiles= [];
 
 
 var invaders= [
-  { left:200, top: 100 }, // 1
-  { left:300, top: 100 }, // 2
-  { left:400, top: 100 }, // 3
-  { left:500, top: 100 }, // 4
-  { left:600, top: 100 }, // 5
-  { left:700, top: 100 }, // 6
-  { left:800, top: 100 }, // 7
-  { left:900, top: 100 }, // 8
-  { left:200, top: 175 }, // 9
-  { left:200, top: 175 }, // 1
-  { left:300, top: 175 }, // 2
-  { left:400, top: 175 }, // 3
-  { left:500, top: 175 }, // 4
-  { left:600, top: 175 }, // 5
-  { left:700, top: 175 }, // 6
-  { left:800, top: 175 }, // 7
-  { left:900, top: 175 } // 8
+  { left:100, top: 100 }, // 1
+  { left:200, top: 100 }, // 2
+  { left:300, top: 100 }, // 3
+  { left:400, top: 100 }, // 4
+  { left:500, top: 100 }, // 5
+  { left:600, top: 100 }, // 6
+  { left:700, top: 100 }, // 7
+  { left:800, top: 100 }, // 8
+
+  { left:100, top: 175 }, // 1
+  { left:200, top: 175 }, // 2
+  { left:300, top: 175 }, // 3
+  { left:400, top: 175 }, // 4
+  { left:500, top: 175 }, // 5
+  { left:600, top: 175 }, // 6
+  { left:700, top: 175 }, // 7
+  { left:800, top: 175 }, // 8
 
 ];
 
@@ -136,3 +136,15 @@ function handleKeyPress (e) {
   }
   drawShip();
 }
+
+
+
+
+
+
+
+
+
+
+
+// how to make things hit each other?
