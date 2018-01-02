@@ -24,4 +24,4 @@ This Game: Super-simple version --> You shoot at them but they dont't shoot back
 
 
 ## Surge Url!
-lean-sneeze.surge.sh
+[Surge](lean-sneeze.surge.sh)
