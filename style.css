@@ -45,9 +45,6 @@ p {
   position: absolute;
   font-size: 14.5px;
   top:45px;
-
-
-
 }
 
 
@@ -99,7 +96,7 @@ p {
   position: absolute;
 }
 
-.invader{
+.invaderz{
   background-image: url("pics/128126.png");
   width: 75px;
   height: 75px;

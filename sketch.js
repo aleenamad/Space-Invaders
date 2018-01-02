@@ -68,18 +68,18 @@ function drawShip() {
 function drawMissiles() {
   // clear out
   document.getElementById('missiles').innerHTML = ""
-  for (var i = 0; i<missiles.length; i++) {
+  for (var missile = 0; missile<missiles.length; missile++) {
 
     // added another div tag that specifies the missiles pistols
     // document.getElementById('missles').innerHTML
     // youre appeneding it to the array, have to use the back tick, in the missiles[i] is just putting the number and showing us the left and right property
-    document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[i].left}px; top:${missiles[i].top}px'></div>`;
+    document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[missile].left}px; top:${missiles[missile].top}px'></div>`;
   }
 }
 // so this is gonna be put in the game loop in order to make it to move
 function moveMissiles() {
-  for(var i = 0 ; i < missiles.length ; i++ ) {
-  missiles[i].top = missiles[i].top - 8
+  for(var missile = 0 ; missile < missiles.length ; missile++ ) {
+  missiles[missile].top = missiles[missile].top - 8
   }
 }
 
@@ -88,16 +88,16 @@ function moveMissiles() {
 //
 function drawInvaders() {
     document.getElementById('invaders').innerHTML = "";
-    for(var i = 0 ; i < invaders.length ; i++ ) {
-    document.getElementById('invaders').innerHTML += `<div class='invader' style='left:${invaders[i].left}px; top:${invaders[i].top}px'></div>`;
+    for(var invader = 0 ; invader < invaders.length ; invader++ ) {
+    document.getElementById('invaders').innerHTML += `<div class='invaderz' style='left:${invaders[invader].left}px; top:${invaders[invader].top}px'></div>`;
   }
 }
 
 
 // allow the invaders to move down
   function moveInvaders() {
-      for(var i = 0 ; i < invaders.length; i++ ) {
-      invaders[i].top = invaders[i].top + 1;
+      for(var invader = 0 ; invader < invaders.length; invader++ ) {
+      invaders[invader].top = invaders[invader].top + 1;
   }
 }
 
@@ -106,12 +106,13 @@ function drawInvaders() {
 // we have to create a game loop so the missiles actually move
 function gameLoop () {
 // use the javascript set timeout function
-  setTimeout(gameLoop , 125)
+  setTimeout(gameLoop , 90)
 // so you want to move the missile then re draw it in the new spot
   drawMissiles();
   moveMissiles();
   drawInvaders();
-  moveInvaders()
+  moveInvaders();
+
 }
 
 gameLoop();
@@ -120,11 +121,11 @@ gameLoop();
 function handleKeyPress (e) {
   if (e.which == 39) {
     console.log("right");
-    ship.left = ship.left + 10;
+    ship.left = ship.left + 15;
   }
   if (e.which == 37) {
     console.log("left");
-    ship.left = ship.left - 10;
+    ship.left = ship.left - 15;
   }
 
   // add missile into array
@@ -147,12 +148,36 @@ function handleKeyPress (e) {
 
 
 
-// how to make things hit each other?
+// how to make things hit each
+function hitThings() {
+  for(var invader = 0 ; invader < invaders.length; invader++ ) {
+    for(var missile = 0 ; missile < missiles.length ; missile++ ) {
+
+      if(
+        (missiles[missile].top <= invaders[invader].top + 75) &&
+        (missiles[missile].top >= invaders[invader].top) &&
+        (missiles[missile].left >= invaders[invader].left) &&
+        (missiles[missile].left <= invaders[invader].left + 75)
+      ){
+        invaders.splice(invader, 1);
+        missiles.splice(missile, 1);
+        }
+      
+    }
+  }
+}
+
+function runLoop () {
+  setTimeout( runLoop, 100)
+
+  hitThings();
+}
+
+runLoop();
 
 
-
-// for(var invaders=0; invaders<invaders.length; invader++) {
-//   for (var missiles=0; missiles<missiles.length; missilles++) {
+// for(var invader=0; invader<invaders.length; invader++) {
+//   for (var missile=0; missile<missiles.length; missille++) {
 //     if(missiles[missile1].left>=invaders[invader].left) &&
 //        (missiles[missile1].left<=invaders[invader].left+50) &&
 //        (missiles[missile1].top<=invaders[invader].top+50) &&
@@ -161,4 +186,5 @@ function handleKeyPress (e) {
 //          missiles.splice(missile1, 1);
 //        }
 //   }
+// }
 // }
