@@ -142,12 +142,6 @@ function handleKeyPress (e) {
 }
 
 
-
-
-
-
-
-
 // how to make things hit each
 function hitThings() {
   for(var invader = 0 ; invader < invaders.length; invader++ ) {
