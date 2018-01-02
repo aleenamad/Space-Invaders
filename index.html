@@ -5,7 +5,7 @@
     <title>Simple Space Invader</title>
     <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="sketch.js"></script>
+
 
   </head>
   <body>
@@ -20,8 +20,9 @@
         Right arrow key to go right.
         Space bar to shoot.</br>
         <br>Once you defeat all the invaders, you win!</br>
+        <br>Refresh the Page if you lose or click pause to pause game!</br>
       </p>
-      
+
 
       <div id="ship"></div>
       <div id="missiles"></div>
@@ -29,7 +30,12 @@
    </div>
 
 
+<input type="button" value="Refresh Page!" onClick="window.location.reload(true)">
+<input type="button" value="Pause Game!" onClick="myPauseAlert()">
+
+
     <!-- JS File -->
       <script type="text/javascript" src="sketch.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
   </body>
 </html>

@@ -3,17 +3,6 @@
   src: url('freaky-fonts_cosmic-alien/ca.ttf');
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
 @keyframes slidein {
@@ -52,7 +41,7 @@ p {
 #background {
     width: 1000px;
     height: 900px;
-    background-image: url("pics/nasa-63032.jpg");
+    background-image: url("nasa-63032.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -64,7 +53,7 @@ p {
   position: absolute;
   left: 490px;
   top: 700px;
-  background-image: url("pics/spaceship-th.png");
+  background-image: url("spaceship-th.png");
   background-repeat: no-repeat;
   background-size: contain;
   animation-duration: 2.5s;
@@ -97,7 +86,7 @@ p {
 }
 
 .invaderz{
-  background-image: url("pics/128126.png");
+  background-image: url("128126.png");
   width: 75px;
   height: 75px;
   position: absolute;

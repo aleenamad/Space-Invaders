@@ -162,29 +162,47 @@ function hitThings() {
         invaders.splice(invader, 1);
         missiles.splice(missile, 1);
         }
-      
+
     }
   }
 }
 
+
+// make pause button
+function myPauseAlert () {
+  alert("Game Is Paused!");
+}
+
+// make alert
+
+  function checkElem(){
+
+  var element = document.getElementById('invaders');
+  if(element.innerHTML==''){
+    console.log('Empty Element')
+
+    myStop();
+    alert("good")
+
+  }
+
+}
+
+
+
+var timer
+
 function runLoop () {
-  setTimeout( runLoop, 100)
+  timer = setTimeout( runLoop, 100)
 
   hitThings();
+  checkElem();
+
 }
 
 runLoop();
 
 
-// for(var invader=0; invader<invaders.length; invader++) {
-//   for (var missile=0; missile<missiles.length; missille++) {
-//     if(missiles[missile1].left>=invaders[invader].left) &&
-//        (missiles[missile1].left<=invaders[invader].left+50) &&
-//        (missiles[missile1].top<=invaders[invader].top+50) &&
-//        (missiles[missile1].top>=invaders[invader].top) {
-//          invaders.splice(invader, 1);
-//          missiles.splice(missile1, 1);
-//        }
-//   }
-// }
-// }
+function myStop () {
+  clearTimeout(timer);
+}
