@@ -79,7 +79,7 @@ function drawMissiles() {
 // so this is gonna be put in the game loop in order to make it to move
 function moveMissiles() {
   for(var missile = 0 ; missile < missiles.length ; missile++ ) {
-  missiles[missile].top = missiles[missile].top - 8
+  missiles[missile].top = missiles[missile].top - 10
   }
 }
 
@@ -182,7 +182,7 @@ function myPauseAlert () {
     console.log('Empty Element')
 
     myStop();
-    alert("Congrats Cadet! You Completed the Mission!")
+    alert("Congrats Cadet! You've Completed the Mission!")
 
   }
 

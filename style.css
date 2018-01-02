@@ -40,7 +40,7 @@ p {
 
 #background {
     width: 1000px;
-    height: 900px;
+    height: 875px;
     background-image: url("nasa-63032.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,13 +75,11 @@ p {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px
-  /* animation-duration: 800ms;
-  animation-name: fadeIn; */
 }
 
 #missiles {
   width: 1000px;
-  height: 900px;
+  height: 875px;
   position: absolute;
 }
 
@@ -95,8 +93,8 @@ p {
 }
 
 
-button {
-  background-color: green;
-
+input[type=button]:hover {
+  background-color: red;
+  display: inline-block;
   position: absolute;
 }
