@@ -106,7 +106,7 @@ function drawInvaders() {
 // we have to create a game loop so the missiles actually move
 function gameLoop () {
 // use the javascript set timeout function
-  setTimeout(gameLoop , 65)
+  setTimeout(gameLoop , 35)
 // so you want to move the missile then re draw it in the new spot
   drawMissiles();
   moveMissiles();
