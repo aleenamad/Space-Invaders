@@ -106,7 +106,7 @@ function drawInvaders() {
 // we have to create a game loop so the missiles actually move
 function gameLoop () {
 // use the javascript set timeout function
-  setTimeout(gameLoop , 90)
+  setTimeout(gameLoop , 65)
 // so you want to move the missile then re draw it in the new spot
   drawMissiles();
   moveMissiles();
@@ -121,11 +121,11 @@ gameLoop();
 function handleKeyPress (e) {
   if (e.which == 39) {
     console.log("right");
-    ship.left = ship.left + 15;
+    ship.left = ship.left + 18;
   }
   if (e.which == 37) {
     console.log("left");
-    ship.left = ship.left - 15;
+    ship.left = ship.left - 18;
   }
 
   // add missile into array
@@ -182,12 +182,11 @@ function myPauseAlert () {
     console.log('Empty Element')
 
     myStop();
-    alert("good")
+    alert("Congrats Cadet! You Completed the Mission!")
 
   }
 
 }
-
 
 
 var timer
