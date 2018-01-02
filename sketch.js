@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 var ship = {
 
   //give it it's properties, position the element
-  left: 575,
-  top: 750
+  left: 490,
+  top: 700
 }
 
 // the missile
@@ -33,14 +33,14 @@ var missiles= [];
 
 
 var invaders= [
-  { left:100, top: 100 }, // 1
-  { left:200, top: 100 }, // 2
-  { left:300, top: 100 }, // 3
-  { left:400, top: 100 }, // 4
-  { left:500, top: 100 }, // 5
-  { left:600, top: 100 }, // 6
-  { left:700, top: 100 }, // 7
-  { left:800, top: 100 }, // 8
+  { left:100, top: 115 }, // 1
+  { left:200, top: 115 }, // 2
+  { left:300, top: 115 }, // 3
+  { left:400, top: 115 }, // 4
+  { left:500, top: 115 }, // 5
+  { left:600, top: 115 }, // 6
+  { left:700, top: 115 }, // 7
+  { left:800, top: 115 }, // 8
 
   { left:100, top: 175 }, // 1
   { left:200, top: 175 }, // 2
@@ -52,6 +52,9 @@ var invaders= [
   { left:800, top: 175 }, // 8
 
 ];
+
+
+
 
 
 // allow it to move because redraw
@@ -144,7 +147,18 @@ function handleKeyPress (e) {
 
 
 
-
-
-
 // how to make things hit each other?
+
+
+
+// for(var invaders=0; invaders<invaders.length; invader++) {
+//   for (var missiles=0; missiles<missiles.length; missilles++) {
+//     if(missiles[missile1].left>=invaders[invader].left) &&
+//        (missiles[missile1].left<=invaders[invader].left+50) &&
+//        (missiles[missile1].top<=invaders[invader].top+50) &&
+//        (missiles[missile1].top>=invaders[invader].top) {
+//          invaders.splice(invader, 1);
+//          missiles.splice(missile1, 1);
+//        }
+//   }
+// }
