@@ -33,6 +33,7 @@ var missiles= [];
 
 
 var invaders= [
+
   { left:100, top: 115 }, // 1
   { left:200, top: 115 }, // 2
   { left:300, top: 115 }, // 3
@@ -208,4 +209,30 @@ runLoop();
 
 function myStop () {
   clearTimeout(timer);
+
 }
+
+
+// still a work in progress
+// make loser alert
+
+
+
+// function youLost () {
+//   alert("You Lost! Exit out and refresh the page!");
+// }
+//
+//
+// var loser
+//
+// function loserTimer () {
+//   loser= setTimeout(loserTimer, 15000)
+//
+//   youLost();
+// }
+//
+// loserTimer();
+//
+// function stopLoserTime () {
+//   window.clearTimeout(loser);
+// }
