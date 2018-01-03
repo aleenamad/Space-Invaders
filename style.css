@@ -19,16 +19,16 @@
 
 h1 {
   font-family: alientFont;
-  color: red;
+  color: white;
   animation-duration: 2.5s;
   animation-name: slidein;
   position: absolute;
-  font-size: 37.8px;
+  font-size: 38px;
 }
 
 p {
   font-family: alientFont;
-  color: red;
+  color: white;
   animation-duration: 2.5s;
   animation-name: slidein;
   position: absolute;
@@ -69,8 +69,8 @@ p {
 
 .missile1 {
   background-color: red;
-  width: 10px;
-	height: 10px;
+  width: 8px;
+	height: 8px;
   position: absolute;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;

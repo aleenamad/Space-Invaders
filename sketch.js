@@ -42,6 +42,7 @@ var invaders= [
   { left:700, top: 115 }, // 7
   { left:800, top: 115 }, // 8
 
+
   { left:100, top: 175 }, // 1
   { left:200, top: 175 }, // 2
   { left:300, top: 175 }, // 3
@@ -50,6 +51,15 @@ var invaders= [
   { left:600, top: 175 }, // 6
   { left:700, top: 175 }, // 7
   { left:800, top: 175 }, // 8
+
+  { left:100, top: 235 }, // 1
+  { left:200, top: 235 }, // 2
+  { left:300, top: 235 }, // 3
+  { left:400, top: 235 }, // 4
+  { left:500, top: 235 }, // 5
+  { left:600, top: 235 }, // 6
+  { left:700, top: 235 }, // 7
+  { left:800, top: 235 }, // 8
 
 ];
 
@@ -176,7 +186,7 @@ function myPauseAlert () {
     console.log('Empty Element')
 
     myStop();
-    alert("Congrats Cadet! You've Completed the Mission!")
+    alert("Congrats Cadet! You've Completed the Mission!\nExit it out and Refresh the Page!")
 
   }
 
