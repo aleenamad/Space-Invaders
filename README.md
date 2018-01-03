@@ -14,10 +14,9 @@ This Game: Super-simple version --> You shoot at them but they dont't shoot back
 
 ## User Stories for Minimum Viable Product (MVP)
 1) As a player, I would want to move the ship left and right.
-2) As a player, I would want to shoot the cannon attached to the ship.
-3) As a player, I would want to shoot the space invader.
-4) As a player, I would want an alert to know if I beat all the space invaders.
-5) As a player, I would want to shoot all the space invaders.
+2) As a player, I would want to shoot the space invader.
+3) As a player, I would want an alert to know if I beat all the space invaders.
+4) As a player, I would want to shoot all the space invaders.
 
 ## Wireframe
 ![img](RealWireFrame.jpg)
