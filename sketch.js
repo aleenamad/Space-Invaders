@@ -217,7 +217,7 @@ function myStop () {
 // make loser alert
 
 
-
+//
 // function youLost () {
 //   alert("You Lost! Exit out and refresh the page!");
 // }
